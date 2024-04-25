@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Lisa Heinzman Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background-color: rgb(255, 241, 250);
+      }
+      img {
+        border: 1px solid black;
+      }
+      .jumbotron {
+        background-color: rgb(255, 216, 242) ;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">Lisa Heinzman</h4>
+              <p class="text-muted">I recently graduated from UCF with a Digital Media degree in the Web and Socail Platforms track with an minor in Information Technology. I love problem solving and getting to work with a team! My specialty is front end React Native application development. Let's make something awesome!</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <p>Email: lisamariehe@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <button class="btn btn-outline-secondary my-2" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            Contact Me
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Lisa Heinzman</h1>
+          <p class="lead text-muted">Web Developer</p>
+          <p>
+            <a href="https://docs.google.com/document/d/1Y2sQzN8JzdmHbfroAiBap553xcAjfvkE-DtiYZINO5Q" class="btn btn-primary my-2">Resume</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="exercise.png" alt="Card image cap" width="300" height="300" onmouseover="this.src='exercise.gif'" onmouseout="this.src='exercise.png'">
+                <div class="card-body">
+                  <p class="lead text-muted">Exercise App</p>
+                  <p class="card-text">This app allows users to choose different exercises and tracks their progress through each workout. This required the use of a useState to avoid rewriting code. I initially encountered issues making the code concise, but using useState solve this problem.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.location.href='https://lisaheinzman.github.io/exercise-app-demo/'">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="menu.png" alt="Card image cap" width="300" height="300" onmouseover="this.src='menu.gif'" onmouseout="this.src='menu.png'">
+                <div class="card-body">
+                  <p class="lead text-muted">Menu App</p>
+                  <p class="card-text">This app allows users to scroll through a menu to view items and prices of a restaurant. This required the use of an array of objects that ran through a function to print its contents to the screen. I initially encountered issues with my react environment but rectified this by reading the documentation.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.location.href='https://lisaheinzman.github.io/menu-app/'">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="quiz.png" alt="Card image cap" width="300" height="300" onmouseover="this.src='quiz.gif'" onmouseout="this.src='quiz.png'">
+                <div class="card-body">
+                  <p class="lead text-muted">Quiz App</p>
+                  <p class="card-text">This app allows for users to take a quiz and view their results and correct answers. This involved parsing through a json object and then utilizing useState on the object in a in a loop that cycled until the end of the object. I initially encountered issues figuring out where in the process to run the function that grades the answer, but I found that performing it on the summary screen was the most efficient. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="todo.png" alt="Card image cap" width="300" height="300" onmouseover="this.src='todo.gif'" onmouseout="this.src='todo.png'">
+                <div class="card-body">
+                  <p class="lead text-muted">To Do App</p>
+                  <p class="card-text">This app allows users to create task and mark them as completed. This was possible by using useState to set and update tasks, as well as implementing a button that adds user input to the task array and utilizing useState to update tasks. It took a bit of problem solving to add functionality to mark tasks as completed, but adding a ‘completed’ attribute to tasks resolved this. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <script src="../../../../assets/js/vendor/holder.min.js"></script>
+  </body>
+</html>
